@@ -1,0 +1,50 @@
+.tips-container{
+    height: 100vh;
+    width: 100%;   
+}
+.tips-container .tips-content{
+    width: 100%;
+    /* height:40%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pilih-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.pilih-menu .makan1,
+.pilih-menu .makan2,
+.pilih-menu .makan3{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pilih-menu select{
+    background-color: #3faf6c;
+    width: 80%;
+    color: #f4f6f9;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .pilih-menu{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .pilih-menu .makan1,
+    .pilih-menu .makan2,
+    .pilih-menu .makan3{
+        width: 95%;
+        padding: 20px 0;
+        margin: 20px 0;
+        box-shadow: 0 4px 10px -4px grey;
+    }
+}
