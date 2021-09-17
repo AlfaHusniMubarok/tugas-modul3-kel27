@@ -33,7 +33,6 @@ class ThirdChild extends React.Component {
           }
         }, this.handleKembalian);
       }
-    
       render() {
         const {
           pembayaran,
@@ -44,7 +43,7 @@ class ThirdChild extends React.Component {
                 <div>
                     <p>Masukkan Total Harga</p>
                 </div>
-                <input onChange={this.handleChangePembayaran} name='totalHarga'
+                <input placeholder='Total Harga' style={{textAlign:'center',fontSize:'15px',border : '1px solid black', borderRadius: '5px' ,height : '40px',width : '60%', marginLeft:'auto', marginRight:'auto'}} onChange={this.handleChangePembayaran} name='totalHarga'
                     value={this.state.totalHarga} />
                 <br />
                 <br />
@@ -52,12 +51,12 @@ class ThirdChild extends React.Component {
                 <div>
                     <p>Masukkan Uang yang dibayarkan</p>
                 </div>
-                <input onChange={this.handleChangePembayaran} name='uang'
+                <input placeholder='Masukkan Uang' style={{textAlign:'center',fontSize:'15px',border : '1px solid black', borderRadius: '5px' ,height : '40px',width : '60%', marginLeft:'auto', marginRight:'auto'}} onChange={this.handleChangePembayaran} name='uang'
                     value={this.state.uang} />
                 <br />
                 <br/>
                 <br />
-                <span style={{textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Kembalian: Rp {kembalian} </span>
+                <span style={{fontSize:'20px',textAlign:'right', margin: '5px 0', fontWeight:'bold', textDecorationLine:'underline'}}>Kembalian: Rp {kembalian} </span>
 
             </>
         );

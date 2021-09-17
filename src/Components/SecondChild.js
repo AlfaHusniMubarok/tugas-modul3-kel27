@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import './SecondChild.css'
+import './SecondChild.css';
 
 class SecondChild extends React.Component {
   constructor(props) {
@@ -7,18 +7,18 @@ class SecondChild extends React.Component {
     this.handleChangeAsupan = this.handleChangeAsupan.bind(this)
     this.state = {
       asupan: [
-        ['Asinan', 10000],
-        ['Toge Goreng', 5000],
-        ['Gado-gado', 15000],
-        ['Ketoprak', 13000],
-        ['Pempek', 12000],
-        ['Rawon', 20000],
-        ['Soto Ayam', 8000],
-        ['Soto Padang', 12000],
-        ['Tongseng', 20000],
-        ['Hamburger', 15000],
-        ['Kerupuk Palembang', 4000],
-        ['Mie Bakso', 17000]
+        ['Ayam Goreng', 10000],
+        ['Bakso', 5000],
+        ['Mie Ayam', 15000],
+        ['Ayam Bakar', 13000],
+        ['Soto Ayam', 12000],
+        ['Rendang', 20000],
+        ['Sate Ayam', 8000],
+        ['Sate Kambing', 12000],
+        ['Penyetan', 20000],
+        ['Nasi Goreng', 15000],
+        ['Kwetiau', 4000],
+        ['Ayam Geprek', 17000]
 
       ],
       menu: {
@@ -194,7 +194,7 @@ class SecondChild extends React.Component {
                     }
                   </Fragment>
                 </select>
-                <h2 style={{ color: '#3faf6c', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: <br></br>Rp {totalHarga} </h2>
+                <h2 style={{ color: '#000', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: <br></br>Rp {totalHarga} </h2>
               </div>
             </div>
           </div>
